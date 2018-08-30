@@ -233,7 +233,7 @@ public:
     implicit_type convert() const;
 };
 
-class type_error : public std::bad_cast { };
+class type_error : public std::exception { };
 
 struct object::implicit_type {
     implicit_type(object const& o) : obj(o) { }

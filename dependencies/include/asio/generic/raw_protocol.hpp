@@ -58,7 +58,7 @@ public:
 
   /// Construct a generic protocol object from a specific protocol.
   /**
-   * @throws @c bad_cast Thrown if the source protocol is not raw-oriented.
+   * @throws @c exception Thrown if the source protocol is not raw-oriented.
    */
   template <typename Protocol>
   raw_protocol(const Protocol& source_protocol)
@@ -67,7 +67,7 @@ public:
   {
     if (source_protocol.type() != type())
     {
-      std::bad_cast ex;
+      std::exception ex;
       clmdep_asio::detail::throw_exception(ex);
     }
   }

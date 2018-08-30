@@ -150,7 +150,7 @@ address_v4 address_v6::to_v4() const
 {
   if (!is_v4_mapped() && !is_v4_compatible())
   {
-    std::bad_cast ex;
+    std::exception ex;
     clmdep_asio::detail::throw_exception(ex);
   }
 

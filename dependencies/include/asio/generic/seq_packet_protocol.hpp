@@ -56,7 +56,7 @@ public:
 
   /// Construct a generic protocol object from a specific protocol.
   /**
-   * @throws @c bad_cast Thrown if the source protocol is not based around
+   * @throws @c exception Thrown if the source protocol is not based around
    * sequenced packets.
    */
   template <typename Protocol>
@@ -66,7 +66,7 @@ public:
   {
     if (source_protocol.type() != type())
     {
-      std::bad_cast ex;
+      std::exception ex;
       clmdep_asio::detail::throw_exception(ex);
     }
   }
