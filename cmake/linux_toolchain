@@ -1,7 +1,7 @@
 SET(CMAKE_SYSTEM_NAME Linux)
 SET(CMAKE_CXX_COMPILER "/Program\ Files/CMake/share/cmake-3.10/Modules/Compiler/GNU-CXX.cmake")
 
-SET(CMAKE_FIND_ROOT_PATH "/Users/achuie/workspace/highlands/lib/rpclib")
+SET(CMAKE_FIND_ROOT_PATH "%cd%/lib/rpclib")
 
 SET(CMAKE_FIND_ROOT_PATH_MODE_PROGRAM NEVER)
 SET(CMAKE_FIND_ROOT_PATH_MODE_LIBRARY ONLY)
