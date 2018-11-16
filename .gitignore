@@ -14,3 +14,12 @@ report
 utils/release
 doc/all.xml
 reference.md
+
+# VS
+*.vcxproj
+*.filters
+*.sln
+*.pc
+
+CMakeFiles
+CMakeCache.txt
