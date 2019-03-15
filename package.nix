@@ -2,9 +2,8 @@
 , cmake
 }:
 
-{ version }:
-
-stdenv.mkDerivation {
+stdenv.mkDerivation rec {
+  version = "2.2.1";
   name = "rpclib-${version}";
 
   nativeBuildInputs = [
