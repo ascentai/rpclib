@@ -24,3 +24,9 @@ reference.md
 
 CMakeFiles
 CMakeCache.txt
+
+# IntelliJ & friends
+.idea
+
+# Nix
+result
