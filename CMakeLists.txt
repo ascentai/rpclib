@@ -1,5 +1,5 @@
 cmake_minimum_required(VERSION 3.5.0)
-project(rpc VERSION 2.2.1)
+project(rpc VERSION 2.2.1 LANGUAGES CXX)
 
 set(CMAKE_MODULE_PATH "${PROJECT_SOURCE_DIR}/cmake")
 
